@@ -1,0 +1,282 @@
+==================================================================================== 
+ 			First-Come-First-Serve			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 10.8079	 | 16.5821	  | 11.3043	  | 18.0000  	|
+| 11.4439	 | 16.6357	  | 11.7857	  | 20.0000  	|
+| 11.7578	 | 16.4533	  | 12.2715	  | 22.0000  	|
+| 10.5867	 | 15.3190	  | 11.0917	  | 22.0000  	|
+| 15.4221	 | 20.3936	  | 15.8936	  | 20.0000  	|
+| 12.0037 	 | 17.0767	  | 12.4694	  | 20.4000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkkk~~ggggggggg~~~~~~~~~qqqqrrrrrrrreeeeeedddddddddnnnnnnnnllliiiiooooooobb
+ ffffccccjjjjjhhhhhhhhhhppppppppmmmmmmmaaaaaaaaaa
+
+
+
+
+==================================================================================== 
+ 			Shortest Job First    			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 5.8288	 | 10.7678	  | 5.3393	  | 14.0000  	|
+| 5.1007	 | 9.4324	  | 4.4324	  | 16.0000  	|
+| 6.9304	 | 10.6949	  | 6.4171	  | 18.0000  	|
+| 8.0964	 | 11.9706	  | 7.6373	  | 18.0000  	|
+| 6.0884	 | 10.1000	  | 5.5666	  | 15.0000  	|
+| 6.4089 	 | 10.5931	  | 5.8785	  | 16.2000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkkkk~gggggggggg~~~~~~~~qqqqqrrrrrrrrreeeeeeelllliiiiioooooooobbbfffffccccc
+ jjjjjjnnnnnnnnnmmmmmmmm
+
+
+
+
+==================================================================================== 
+ 			Shortest Runtime First			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 5.5651	 | 10.7040	  | 1.3040	  | 15.0000  	|
+| 3.6007	 | 7.9324	  | 0.8074	  | 16.0000  	|
+| 5.0335	 | 9.0492	  | 2.2071	  | 19.0000  	|
+| 4.5140	 | 8.5872	  | 3.2188	  | 19.0000  	|
+| 5.4006	 | 9.4916	  | 2.1791	  | 16.0000  	|
+| 4.8228 	 | 9.1529	  | 1.9433	  | 17.0000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkk~~gggggggg~~~~~~~~~qqqrrrrrreeeeennnnnlliiioooooonbnfffrcccjjjjppppppmmm
+ mmmp
+
+
+
+
+==================================================================================== 
+ 			Round Robin           			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 19.0857	 | 24.8598	  | 0.5265	  | 18.0000  	|
+| 19.5439	 | 24.7357	  | 0.5857	  | 20.0000  	|
+| 15.2123	 | 19.9078	  | 0.5442	  | 22.0000  	|
+| 14.4958	 | 19.2281	  | 0.4554	  | 22.0000  	|
+| 21.1221	 | 26.0936	  | 0.5936	  | 20.0000  	|
+| 17.8920 	 | 22.9650	  | 0.5411	  | 20.4000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkk~~gggggggg~~~~~~~~~qqqrrrrrrednrednednliednloiednoibdnofdncofjdhcpofjhcp
+ moajhpmajhpmahpmahpmahpmahahaa
+
+
+
+
+==================================================================================== 
+ 			Highest Priority (Pre)			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 14.4736	 | 20.1005	  | 5.2255	  | 16.0000  	|
+| 9.3119	 | 13.9877	  | 1.0465	  | 17.0000  	|
+| 7.5693	 | 12.2806	  | 2.4306	  | 20.0000  	|
+| 8.1292	 | 12.5067	  | 2.9567	  | 20.0000  	|
+| 13.1873	 | 18.7509	  | 3.3223	  | 14.0000  	|
+| 10.5343 	 | 15.5253	  | 2.9963	  | 17.4000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkkk~~ggggggggg~~~~~~~~~qqqqrrrrrrrdddddddddnrnnnnnnneeeeeelioblfffficcccob
+ hhphphphphphphphphmmmmmmmlioioooo
+
+
+
+
+==================================================================================== 
+ 			Highest Priority (Non)			
+==================================================================================== 
+Statistics for 5 runs: 
+
+_________________________________________________________________
+| Wait Time 	 | Turnaround Time | Response Time | Throughput |
+| 8.6085	 | 14.4144	  | 8.0573	  | 14.0000  	|
+| 4.2194	 | 8.6161	  | 3.5536	  | 16.0000  	|
+| 8.4823	 | 13.2343	  | 8.0676	  | 18.0000  	|
+| 8.8966	 | 13.5008	  | 8.4008	  | 20.0000  	|
+| 6.8867	 | 12.5316	  | 6.3777	  | 13.0000  	|
+| 7.4187 	 | 12.4594	  | 6.8914	  | 16.2000 	| Averages
+ _________________________________________________________________
+
+
+Single Run Explanation
+
+Given the following processes:
+
+ (Name: k) (Arrival Time: 4.7845) (Run Time: 4.2292) 
+ (Name: g) (Arrival Time: 11.9444) (Run Time: 8.0651) 
+ (Name: q) (Arrival Time: 29.6719) (Run Time: 3.3387) 
+ (Name: r) (Arrival Time: 33.0734) (Run Time: 7.6829) 
+ (Name: e) (Arrival Time: 39.9948) (Run Time: 5.8051) 
+ (Name: d) (Arrival Time: 40.3389) (Run Time: 8.6796) 
+ (Name: n) (Arrival Time: 40.4872) (Run Time: 7.4939) 
+ (Name: l) (Arrival Time: 50.5935) (Run Time: 2.3039) 
+ (Name: i) (Arrival Time: 51.8465) (Run Time: 3.2016) 
+ (Name: o) (Arrival Time: 56.2430) (Run Time: 6.2004) 
+ (Name: b) (Arrival Time: 65.2755) (Run Time: 1.7792) 
+ (Name: f) (Arrival Time: 69.3788) (Run Time: 3.7089) 
+ (Name: c) (Arrival Time: 74.3342) (Run Time: 3.6111) 
+ (Name: j) (Arrival Time: 77.7037) (Run Time: 4.7586) 
+ (Name: h) (Arrival Time: 80.3176) (Run Time: 9.0244) 
+ (Name: p) (Arrival Time: 82.1895) (Run Time: 7.9377) 
+ (Name: m) (Arrival Time: 90.9188) (Run Time: 6.9682) 
+ (Name: a) (Arrival Time: 93.4266) (Run Time: 9.1464) 
+
+We get the following sequence of quantums, with ~ representing no process:
+
+ ~~~~~kkkkk~~ggggggggg~~~~~~~~~qqqqrrrrrrrrdddddddddnnnnnnnneeeeeellliiiiffffcccco
+ oooooohhhhhhhhhhpppppppp
+
+
+
+
